@@ -7,8 +7,8 @@ namespace Wuerfelspiel
         int anzahlSeiten;
         string artWuerfel;
         int augenWuefel;
-        int max;
-        int min;
+        int maxSeiten;
+        int minSeiten;
         int letztesErgebnis;
         bool gesichert;
         Random rnd;
@@ -47,19 +47,19 @@ namespace Wuerfelspiel
             }
         }
 
-        public int Max
+        public int MaxSeiten
         {
             get
             {
-                return max;
+                return maxSeiten;
             }
         }
 
-        public int Min
+        public int MinSeiten
         {
             get
             {
-                return min;
+                return minSeiten;
             }
         }
 

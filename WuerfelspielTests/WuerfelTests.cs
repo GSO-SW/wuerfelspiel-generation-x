@@ -11,16 +11,16 @@ namespace WuerfelspielTests
         public void Wuerfel_grossklein()
         {
             //Arrange
-            int max = 6;
-            int min = 1;
+            int maxSeiten = 6;
+            int minSeiten = 1;
 
             //Act
             Wuerfel wuerfel = new Wuerfel;
 
             //Assert
-            Assert.AreEqual(max, wuerfel.AnzahlSeiten);
-            Assert.AreEqual(min, wuerfel.AnzahlSeiten);
-            Assert.IsFalse(wuerfel.Gesichert);
+            Assert.AreEqual(maxSeiten, wuerfel.AnzahlSeiten);
+            Assert.AreEqual(minSeiten, wuerfel.AnzahlSeiten);
+            
 
 
         }
