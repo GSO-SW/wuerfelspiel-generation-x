@@ -10,17 +10,19 @@ namespace WuerfelspielTests
         [TestMethod]
         public void Wuerfel_grossklein()
         {
+            //Arrange
             int max = 6;
             int min = 1;
 
-            if (max > 6)
-            {
-                Console.WriteLine("es ist kein w6 wuerfel");
-            }
-            if (min < 1)
-            {
-                Console.WriteLine("Der Wuerfel kann nicht kleiner als 1 sein");
-            }
+            //Act
+            Wuerfel wuerfel = new Wuerfel;
+
+            //Assert
+            Assert.AreEqual(max, wuerfel.AnzahlSeiten);
+            Assert.AreEqual(min, wuerfel.AnzahlSeiten);
+            Assert.IsFalse(wuerfel.Gesichert);
+
+
         }
     }
 }
